@@ -1,31 +1,31 @@
+@charset "UTF-8";
+:root {
+  --primary-background-color: #fef5f8;
+  --primary-text-color-1: #1a202c;
+  --primary-text-color-2: #666666;
+  --secondary-text-color-1: #d04c73;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  background: #fef5f8;
   -webkit-transition: background 2s;
   transition: background 2s;
   -webkit-animation: fadeEffect 2s;
           animation: fadeEffect 2s;
 }
 
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.theme-dark {
+  --primary-background-color: #191c2f;
+  --primary-text-color-1: #dbe0ea;
+  --primary-text-color-2: #8c8c8c;
+  --secondary-text-color-1: #cb3863;
 }
 
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+html, body {
+  background: var(--primary-background-color);
 }
 
 .content-wrapper {
@@ -37,14 +37,18 @@ body {
 }
 
 .content-wrapper .section-hero .hero-head .navbar .navbar-brand .navbar-item {
-  color: #1a202c;
+  color: var(--primary-text-color-1);
   font-size: 34px;
   font-weight: 800;
   line-height: 24px;
 }
 
+.content-wrapper .section-hero .hero-head .navbar .navbar-brand .navbar-burger {
+  color: #f15f79;
+}
+
 .content-wrapper .section-hero .hero-head .navbar .navbar-menu .navbar-item {
-  color: #1a202c;
+  color: var(--primary-text-color-1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 18px;
@@ -55,12 +59,18 @@ body {
 .content-wrapper .section-hero .hero-head .navbar .navbar-menu .navbar-item:hover {
   -webkit-transform: translate(0, -6px);
           transform: translate(0, -6px);
-  color: #666666;
+  color: var(--secondary-text-color-1);
+}
+
+.content-wrapper .section-hero .hero-head .navbar .is-active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: var(--primary-background-color);
 }
 
 .content-wrapper .section-hero .hero-body .header .title {
-  padding: 10px 0 20px 0;
-  color: #191c2f;
+  padding: 5px 0 20px 0;
+  color: var(--primary-text-color-1);
   font-size: 44px;
   font-weight: 750;
   line-height: 55px;
@@ -75,7 +85,7 @@ body {
 .content-wrapper .section-hero .hero-body .header .subtitle-is-top {
   font-size: 16px;
   line-height: 24px;
-  color: #d04c73;
+  color: var(--secondary-text-color-1);
   text-transform: uppercase;
   font-weight: 800;
   line-height: 40px;
@@ -90,7 +100,7 @@ body {
 .content-wrapper .section-hero .hero-body .header .subtitle-is-buttom {
   font-size: 16px;
   line-height: 24px;
-  color: #666666;
+  color: var(--primary-text-color-2);
   font-weight: 400;
 }
 
@@ -110,5 +120,71 @@ body {
 .content-wrapper .section-hero .hero-body .header img:hover {
   -webkit-transform: translate(0, -3px);
           transform: translate(0, -3px);
+}
+
+.toggle {
+  cursor: pointer;
+  font-size: 150%;
+}
+
+.toggle:before {
+  content: '🌒 Dark Mode';
+}
+
+.toggle.active:before {
+  content: '☀️ Light Mode';
+}
+
+.toggle.animate {
+  -webkit-animation: animate 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: animate 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

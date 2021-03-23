@@ -9,26 +9,31 @@ $faux-granite-gray: #666666;
 $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
 
-$primary-color: $faux-snow;
+:root {
+    --primary-background-color: #{$faux-snow};
+    --primary-text-color-1: #{$faux-dark-gunmetal-1};
+    --primary-text-color-2: #{$faux-granite-gray};
+    --secondary-text-color-1: #{$faux-ruber};
+}
 
 html,
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    background: $primary-color;
     transition: background 2s;
     animation: fadeEffect 2s;
 }
 
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
+.theme-dark {
+    --primary-background-color: #{$faux-dark-gunmetal-2};
+    --primary-text-color-1: #{lighten($faux-dark-gunmetal-1, 75)};
+    --primary-text-color-2: #{lighten($faux-granite-gray, 15)};
+    --secondary-text-color-1: #{darken($faux-ruber, 5)};
+}
 
-    to {
-        opacity: 1;
-    }
+html, body {
+    background: var(--primary-background-color);
 }
 
 @mixin subtitle($font-size, $line-height) {
@@ -45,16 +50,19 @@ body {
                 padding: 20px;
                 .navbar-brand {
                     .navbar-item {
-                        color: $faux-dark-gunmetal-1;
+                        color: var(--primary-text-color-1);
 
                         font-size: 34px;
                         font-weight: 800;
                         line-height: 24px;
                     }
+                    .navbar-burger {
+                        color: $faux-brink-pink;
+                    }
                 }
                 .navbar-menu {
                     .navbar-item {
-                        color: $faux-dark-gunmetal-1;
+                        color: var(--primary-text-color-1);
                         transition: 0.3s;
                         font-size: 18px;
 
@@ -64,18 +72,23 @@ body {
                         &:hover {
                             transform: translate(0, -6px);
 
-                            color: $faux-granite-gray;
+                            color: var(--secondary-text-color-1);
                         }
                     }
+                }
+                .is-active {
+                    transition: 0.3s;
+
+                    background: var(--primary-background-color);
                 }
             }
         }
         .hero-body {
             .header {
                 .title {
-                    padding: 10px 0 20px 0;
+                    padding: 5px 0 20px 0;
 
-                    color: $faux-dark-gunmetal-2;
+                    color: var(--primary-text-color-1);
                     font-size: 44px;
                     font-weight: 750;
                     line-height: 55px;
@@ -87,7 +100,7 @@ body {
                 .subtitle-is-top {
                     @include subtitle(16px, 24px);
 
-                    color: $faux-ruber;
+                    color: var(--secondary-text-color-1);
                     text-transform: uppercase;
                     font-weight: 800;
                     line-height: 40px;
@@ -99,7 +112,7 @@ body {
                 .subtitle-is-buttom {
                     @include subtitle(16px, 24px);
 
-                    color: $faux-granite-gray;
+                    color: var(--primary-text-color-2);
                     font-weight: 400;
 
                     @media only screen and (max-width: 600px) {
@@ -118,5 +131,36 @@ body {
                 }
             }
         }
+    }
+}
+
+.toggle {
+    cursor: pointer;
+    font-size: 150%;
+
+    &:before {
+        content: '🌒 Dark Mode';
+    }
+    &.active:before {
+        content: '☀️ Light Mode';
+    }
+    &.animate {
+        animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+}
+
+@keyframes animate {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
