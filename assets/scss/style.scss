@@ -8,3 +8,21 @@ $faux-granite-gray: #666666;
 
 $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: $faux-snow;
+    animation: fadeEffect 2s;
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

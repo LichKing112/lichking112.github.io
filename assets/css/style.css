@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #fef5f8;
+  -webkit-animation: fadeEffect 2s;
+          animation: fadeEffect 2s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

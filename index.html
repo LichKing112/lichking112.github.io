@@ -24,49 +24,43 @@
         />
     </head>
     <body>
-        <div class="content-wrapper wrapper is-fluid">
+        <div class="content-wrapper container is-fluid">
             <section class="section-hero hero is-fullheight-with-navbar">
                 <div class="hero-head">
-                    <div class="container">
-                        <nav class="navbar is-transparent">
-                            <div class="navbar-brand">
-                                <a
-                                    href="#"
-                                    class="navbar-item"
-                                    onclick="openTab(event, 'Home')"
-                                >
-                                    YD
-                                </a>
-                                <a
-                                    class="navbar-burger"
-                                    aria-label="menu"
-                                    aria-expanded="false"
-                                    data-target="navbarMenu"
-                                >
-                                    <span aria-hidden="true"></span>
-                                    <span aria-hidden="true"></span>
-                                    <span aria-hidden="true"></span>
-                                </a>
-                            </div>
-                            <div
-                                class="navbar-menu has-text-centered-mobile"
-                                id="navbarMenu"
+                    <nav class="navbar is-transparent">
+                        <div class="navbar-brand">
+                            <a
+                                href="#"
+                                class="navbar-item"
+                                onclick="openTab(event, 'Home')"
                             >
-                                <div class="navbar-start">
-                                    <a href="#" class="navbar-item"> Home </a>
-                                    <a href="#" class="navbar-item"> Skills </a>
-                                    <a href="#" class="navbar-item">
-                                        Projects
-                                    </a>
-                                </div>
-                                <div class="navbar-end">
-                                    <a href="#" class="navbar-item">
-                                        Contact Me
-                                    </a>
-                                </div>
+                                YD
+                            </a>
+                            <a
+                                class="navbar-burger"
+                                aria-label="menu"
+                                aria-expanded="false"
+                                data-target="navbarMenu"
+                            >
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div
+                            class="navbar-menu has-text-centered-mobile"
+                            id="navbarMenu"
+                        >
+                            <div class="navbar-start">
+                                <a href="#" class="navbar-item"> Home </a>
+                                <a href="#" class="navbar-item"> Skills </a>
+                                <a href="#" class="navbar-item"> Projects </a>
                             </div>
-                        </nav>
-                    </div>
+                            <div class="navbar-end">
+                                <a href="#" class="navbar-item"> Contact Me </a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="hero-body">
                     <header class="header container">
@@ -86,7 +80,11 @@
                             </div>
                             <div class="column is-offset-2">
                                 <figure class="image is-hidden-mobile">
-                                    <img class="is-rounded" src="assets/images/profile_picture.png" alt="Header Profile Picture">
+                                    <img
+                                        class="is-rounded"
+                                        src="assets/images/profile_picture.png"
+                                        alt="Header Profile Picture"
+                                    />
                                 </figure>
                             </div>
                         </div>
