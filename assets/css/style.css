@@ -1,8 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   border: 0;
   background: #fef5f8;
+  -webkit-transition: background 2s;
+  transition: background 2s;
   -webkit-animation: fadeEffect 2s;
           animation: fadeEffect 2s;
 }
@@ -23,5 +26,89 @@ html, body {
   to {
     opacity: 1;
   }
+}
+
+.content-wrapper {
+  font-family: "Manrope", sans-serif;
+}
+
+.content-wrapper .section-hero .hero-head .navbar {
+  padding: 20px;
+}
+
+.content-wrapper .section-hero .hero-head .navbar .navbar-brand .navbar-item {
+  color: #1a202c;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.content-wrapper .section-hero .hero-head .navbar .navbar-menu .navbar-item {
+  color: #1a202c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.content-wrapper .section-hero .hero-head .navbar .navbar-menu .navbar-item:hover {
+  -webkit-transform: translate(0, -6px);
+          transform: translate(0, -6px);
+  color: #666666;
+}
+
+.content-wrapper .section-hero .hero-body .header .title {
+  padding: 10px 0 20px 0;
+  color: #191c2f;
+  font-size: 44px;
+  font-weight: 750;
+  line-height: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper .section-hero .hero-body .header .title {
+    font-size: 34px;
+  }
+}
+
+.content-wrapper .section-hero .hero-body .header .subtitle-is-top {
+  font-size: 16px;
+  line-height: 24px;
+  color: #d04c73;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper .section-hero .hero-body .header .subtitle-is-top {
+    font-size: 12px;
+  }
+}
+
+.content-wrapper .section-hero .hero-body .header .subtitle-is-buttom {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper .section-hero .hero-body .header .subtitle-is-buttom {
+    font-size: 14px;
+  }
+}
+
+.content-wrapper .section-hero .hero-body .header img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper .section-hero .hero-body .header img:hover {
+  -webkit-transform: translate(0, -3px);
+          transform: translate(0, -3px);
 }
 /*# sourceMappingURL=style.css.map */

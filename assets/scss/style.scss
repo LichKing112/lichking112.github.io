@@ -1,4 +1,4 @@
-$manrope-font: 'Manrope', sans-serif;
+$manrope-font: "Manrope", sans-serif;
 
 $faux-floral-white: #fdf7f4;
 $faux-snow: #fef5f8;
@@ -9,20 +9,114 @@ $faux-granite-gray: #666666;
 $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
 
-html, body {
+$primary-color: $faux-snow;
+
+html,
+body {
     margin: 0;
     padding: 0;
     border: 0;
-    background: $faux-snow;
+    background: $primary-color;
+    transition: background 2s;
     animation: fadeEffect 2s;
 }
 
 @keyframes fadeEffect {
-	from {
-		opacity: 0;
-	}
+    from {
+        opacity: 0;
+    }
 
-	to {
-		opacity: 1;
-	}
+    to {
+        opacity: 1;
+    }
+}
+
+@mixin subtitle($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.content-wrapper {
+    font-family: $manrope-font;
+
+    .section-hero {
+        .hero-head {
+            .navbar {
+                padding: 20px;
+                .navbar-brand {
+                    .navbar-item {
+                        color: $faux-dark-gunmetal-1;
+
+                        font-size: 34px;
+                        font-weight: 800;
+                        line-height: 24px;
+                    }
+                }
+                .navbar-menu {
+                    .navbar-item {
+                        color: $faux-dark-gunmetal-1;
+                        transition: 0.3s;
+                        font-size: 18px;
+
+                        font-weight: 600;
+                        line-height: 34px;
+
+                        &:hover {
+                            transform: translate(0, -6px);
+
+                            color: $faux-granite-gray;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-body {
+            .header {
+                .title {
+                    padding: 10px 0 20px 0;
+
+                    color: $faux-dark-gunmetal-2;
+                    font-size: 44px;
+                    font-weight: 750;
+                    line-height: 55px;
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 34px;
+                    }
+                }
+                .subtitle-is-top {
+                    @include subtitle(16px, 24px);
+
+                    color: $faux-ruber;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    line-height: 40px;
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 12px;
+                    }
+                }
+                .subtitle-is-buttom {
+                    @include subtitle(16px, 24px);
+
+                    color: $faux-granite-gray;
+                    font-weight: 400;
+
+                    @media only screen and (max-width: 600px) {
+                        font-size: 14px;
+                    }
+                }
+
+                img {
+                    transition: 0.3s;
+
+                    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+
+                    &:hover {
+                        transform: translate(0, -3px);
+                    }
+                }
+            }
+        }
+    }
 }
