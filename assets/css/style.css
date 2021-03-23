@@ -4,6 +4,8 @@
   --primary-text-color-1: #1a202c;
   --primary-text-color-2: #666666;
   --secondary-text-color-1: #d04c73;
+  --primary-btn-color-1: #fdf7f4;
+  --primary-btn-hover-color-1: white;
 }
 
 html,
@@ -22,9 +24,12 @@ body {
   --primary-text-color-1: #dbe0ea;
   --primary-text-color-2: #8c8c8c;
   --secondary-text-color-1: #cb3863;
+  --primary-btn-color-1: #36180a;
+  --primary-btn-hover-color-1: #36180a;
 }
 
-html, body {
+html,
+body {
   background: var(--primary-background-color);
 }
 
@@ -66,6 +71,10 @@ html, body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background: var(--primary-background-color);
+}
+
+.content-wrapper .section-hero .hero-body .header {
+  padding: 10px;
 }
 
 .content-wrapper .section-hero .hero-body .header .title {
@@ -122,17 +131,55 @@ html, body {
           transform: translate(0, -3px);
 }
 
+@media only screen and (max-width: 600px) {
+  .content-wrapper .section-hero .hero-body .header {
+    padding: 5px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn--floral-white {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: var(--primary-btn-color-1);
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 10px 24px;
+  margin-bottom: 22px;
+  color: var(--primary-text-color-1);
+  font-weight: 750;
+}
+
+.btn--floral-white:hover {
+  -webkit-transform: translate(0, -6px);
+          transform: translate(0, -6px);
+  color: var(--primary-text-color-2);
+  background: var(--primary-btn-hover-color-1);
+}
+
 .toggle {
   cursor: pointer;
   font-size: 150%;
 }
 
 .toggle:before {
-  content: '🌒 Dark Mode';
+  content: "🌒 Dark Mode";
 }
 
 .toggle.active:before {
-  content: '☀️ Light Mode';
+  content: "☀️ Light Mode";
 }
 
 .toggle.animate {
