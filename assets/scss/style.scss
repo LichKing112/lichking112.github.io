@@ -18,6 +18,10 @@ $faux-brink-pink: #f15f79;
     --primary-btn-hover-color-1: #{lighten($faux-floral-white, 15)};
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html,
 body {
     margin: 0;
