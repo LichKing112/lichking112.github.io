@@ -91,7 +91,8 @@ body {
   }
 }
 
-.content-wrapper .section-skills svg, .content-wrapper .section-skills path {
+.content-wrapper .section-skills svg,
+.content-wrapper .section-skills path {
   fill: var(--primary-text-color-1);
 }
 
@@ -99,6 +100,8 @@ body {
   padding: 24px;
   margin-top: 40px;
   background-color: var(--primary-btn-color-1);
+  -webkit-box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017), 0 5.2px 10px rgba(0, 0, 0, 0.025), 0 10.3px 24.1px rgba(0, 0, 0, 0.033), 0 29px 80px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017), 0 5.2px 10px rgba(0, 0, 0, 0.025), 0 10.3px 24.1px rgba(0, 0, 0, 0.033), 0 29px 80px rgba(0, 0, 0, 0.05);
 }
 
 .content-wrapper .section-skills .card .title {
@@ -108,7 +111,8 @@ body {
   line-height: 55px;
 }
 
-.content-wrapper .section-skills .card .subtitle, .content-wrapper .section-skills .card strong {
+.content-wrapper .section-skills .card .subtitle,
+.content-wrapper .section-skills .card strong {
   color: var(--primary-text-color-1);
   font-size: 16px;
   line-height: 24px;

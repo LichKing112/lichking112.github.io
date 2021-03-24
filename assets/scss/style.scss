@@ -34,7 +34,7 @@ body {
     --primary-text-color-2: #{lighten($faux-granite-gray, 45)};
     --secondary-text-color-1: #{darken($faux-ruber, 5)};
     --primary-btn-color-1: #{darken($faux-floral-white, 97)};
-    --primary-btn-hover-color-1: #{darken($faux-floral-white,85)};
+    --primary-btn-hover-color-1: #{darken($faux-floral-white, 85)};
 }
 
 @mixin subtitle($font-size, $line-height) {
@@ -104,7 +104,8 @@ body {
         }
     }
     .section-skills {
-        svg, path {
+        svg,
+        path {
             fill: var(--primary-text-color-1);
         }
         .card {
@@ -112,13 +113,19 @@ body {
             margin-top: 40px;
             background-color: var(--primary-btn-color-1);
 
+            box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
+                0 5.2px 10px rgba(0, 0, 0, 0.025),
+                0 10.3px 24.1px rgba(0, 0, 0, 0.033),
+                0 29px 80px rgba(0, 0, 0, 0.05);
+                
             .title {
                 color: var(--secondary-text-color-1);
                 font-size: 22px;
-		        font-weight: 600;
-		        line-height: 55px;
+                font-weight: 600;
+                line-height: 55px;
             }
-            .subtitle, strong {
+            .subtitle,
+            strong {
                 color: var(--primary-text-color-1);
                 @include subtitle(16px, 24px);
             }
@@ -163,34 +170,34 @@ body {
 
 .btn {
     display: inline-block;
-	background: transparent;
-	font: inherit;
-	border: 0;
-	outline: 0;
-	padding: 0;
-	transition: all 200ms ease-in;
-	cursor: pointer;
+    background: transparent;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
 
     &--floral-white {
-		transition: 0.3s;
+        transition: 0.3s;
 
-		background: var(--primary-btn-color-1);
+        background: var(--primary-btn-color-1);
 
-		box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-		border-radius: 2px;
-		padding: 10px 24px;
-		margin-bottom: 22px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 10px 24px;
+        margin-bottom: 22px;
 
-		color: var(--primary-text-color-1);
-		font-weight: 750;
+        color: var(--primary-text-color-1);
+        font-weight: 750;
 
-		&:hover {
-			transform: translate(0, -6px);
+        &:hover {
+            transform: translate(0, -6px);
             color: var(--primary-text-color-2);
 
-			background: var(--primary-btn-hover-color-1);
-		}
-	}
+            background: var(--primary-btn-hover-color-1);
+        }
+    }
 }
 
 .toggle {
