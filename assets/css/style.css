@@ -17,20 +17,16 @@ body {
   transition: background 2s;
   -webkit-animation: fadeEffect 2s;
           animation: fadeEffect 2s;
+  background: var(--primary-background-color);
 }
 
 .theme-dark {
   --primary-background-color: #191c2f;
   --primary-text-color-1: #dbe0ea;
-  --primary-text-color-2: #8c8c8c;
+  --primary-text-color-2: #d9d9d9;
   --secondary-text-color-1: #cb3863;
-  --primary-btn-color-1: #36180a;
+  --primary-btn-color-1: #020100;
   --primary-btn-hover-color-1: #36180a;
-}
-
-html,
-body {
-  background: var(--primary-background-color);
 }
 
 .content-wrapper {
@@ -77,48 +73,6 @@ body {
   padding: 10px;
 }
 
-.content-wrapper .section-hero .hero-body .header .title {
-  padding: 5px 0 20px 0;
-  color: var(--primary-text-color-1);
-  font-size: 44px;
-  font-weight: 750;
-  line-height: 55px;
-}
-
-@media only screen and (max-width: 600px) {
-  .content-wrapper .section-hero .hero-body .header .title {
-    font-size: 34px;
-  }
-}
-
-.content-wrapper .section-hero .hero-body .header .subtitle-is-top {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--secondary-text-color-1);
-  text-transform: uppercase;
-  font-weight: 800;
-  line-height: 40px;
-}
-
-@media only screen and (max-width: 600px) {
-  .content-wrapper .section-hero .hero-body .header .subtitle-is-top {
-    font-size: 12px;
-  }
-}
-
-.content-wrapper .section-hero .hero-body .header .subtitle-is-buttom {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--primary-text-color-2);
-  font-weight: 400;
-}
-
-@media only screen and (max-width: 600px) {
-  .content-wrapper .section-hero .hero-body .header .subtitle-is-buttom {
-    font-size: 14px;
-  }
-}
-
 .content-wrapper .section-hero .hero-body .header img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -134,6 +88,71 @@ body {
 @media only screen and (max-width: 600px) {
   .content-wrapper .section-hero .hero-body .header {
     padding: 5px;
+  }
+}
+
+.content-wrapper .section-skills svg, .content-wrapper .section-skills path {
+  fill: var(--primary-text-color-1);
+}
+
+.content-wrapper .section-skills .card {
+  padding: 24px;
+  margin-top: 40px;
+  background-color: var(--primary-btn-color-1);
+}
+
+.content-wrapper .section-skills .card .title {
+  color: var(--secondary-text-color-1);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.content-wrapper .section-skills .card .subtitle, .content-wrapper .section-skills .card strong {
+  color: var(--primary-text-color-1);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.title {
+  padding: 5px 0 20px 0;
+  color: var(--primary-text-color-1);
+  font-size: 44px;
+  font-weight: 750;
+  line-height: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+.subtitle-is-top {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-text-color-1);
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle-is-top {
+    font-size: 12px;
+  }
+}
+
+.subtitle-is-buttom {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-text-color-2);
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle-is-buttom {
+    font-size: 14px;
   }
 }
 

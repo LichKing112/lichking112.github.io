@@ -25,20 +25,16 @@ body {
     border: 0;
     transition: background 2s;
     animation: fadeEffect 2s;
+    background: var(--primary-background-color);
 }
 
 .theme-dark {
     --primary-background-color: #{$faux-dark-gunmetal-2};
     --primary-text-color-1: #{lighten($faux-dark-gunmetal-1, 75)};
-    --primary-text-color-2: #{lighten($faux-granite-gray, 15)};
+    --primary-text-color-2: #{lighten($faux-granite-gray, 45)};
     --secondary-text-color-1: #{darken($faux-ruber, 5)};
-    --primary-btn-color-1: #{darken($faux-floral-white, 85)};
+    --primary-btn-color-1: #{darken($faux-floral-white, 97)};
     --primary-btn-hover-color-1: #{darken($faux-floral-white,85)};
-}
-
-html,
-body {
-    background: var(--primary-background-color);
 }
 
 @mixin subtitle($font-size, $line-height) {
@@ -91,40 +87,6 @@ body {
         .hero-body {
             .header {
                 padding: 10px;
-                .title {
-                    padding: 5px 0 20px 0;
-
-                    color: var(--primary-text-color-1);
-                    font-size: 44px;
-                    font-weight: 750;
-                    line-height: 55px;
-
-                    @media only screen and (max-width: 600px) {
-                        font-size: 34px;
-                    }
-                }
-                .subtitle-is-top {
-                    @include subtitle(16px, 24px);
-
-                    color: var(--secondary-text-color-1);
-                    text-transform: uppercase;
-                    font-weight: 800;
-                    line-height: 40px;
-
-                    @media only screen and (max-width: 600px) {
-                        font-size: 12px;
-                    }
-                }
-                .subtitle-is-buttom {
-                    @include subtitle(16px, 24px);
-
-                    color: var(--primary-text-color-2);
-                    font-weight: 400;
-
-                    @media only screen and (max-width: 600px) {
-                        font-size: 14px;
-                    }
-                }
 
                 img {
                     transition: 0.3s;
@@ -140,6 +102,62 @@ body {
                 }
             }
         }
+    }
+    .section-skills {
+        svg, path {
+            fill: var(--primary-text-color-1);
+        }
+        .card {
+            padding: 24px;
+            margin-top: 40px;
+            background-color: var(--primary-btn-color-1);
+
+            .title {
+                color: var(--secondary-text-color-1);
+                font-size: 22px;
+		        font-weight: 600;
+		        line-height: 55px;
+            }
+            .subtitle, strong {
+                color: var(--primary-text-color-1);
+                @include subtitle(16px, 24px);
+            }
+        }
+    }
+}
+
+.title {
+    padding: 5px 0 20px 0;
+
+    color: var(--primary-text-color-1);
+    font-size: 44px;
+    font-weight: 750;
+    line-height: 55px;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 34px;
+    }
+}
+.subtitle-is-top {
+    @include subtitle(16px, 24px);
+
+    color: var(--secondary-text-color-1);
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 40px;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+}
+.subtitle-is-buttom {
+    @include subtitle(16px, 24px);
+
+    color: var(--primary-text-color-2);
+    font-weight: 400;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 14px;
     }
 }
 
