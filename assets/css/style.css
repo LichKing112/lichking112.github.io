@@ -205,11 +205,11 @@ body {
 }
 
 .toggle:before {
-  content: "🌒 Dark Mode";
+  content: "🌒 Darken the world!";
 }
 
 .toggle.active:before {
-  content: "☀️ Light Mode";
+  content: "☀️ Let there be light!";
 }
 
 .toggle.animate {

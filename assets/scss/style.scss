@@ -213,10 +213,10 @@ body {
     font-size: 150%;
 
     &:before {
-        content: "🌒 Dark Mode";
+        content: "🌒 Darken the world!";
     }
     &.active:before {
-        content: "☀️ Light Mode";
+        content: "☀️ Let there be light!";
     }
     &.animate {
         animation: animate 0.3s cubic-bezier(0.4, 0, 0.2, 1);
