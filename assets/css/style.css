@@ -118,6 +118,13 @@ body {
   line-height: 24px;
 }
 
+@media only screen and (max-width: 600px) {
+  .content-wrapper .section-skills .card {
+    padding: 18x;
+    margin-top: 35px;
+  }
+}
+
 .title {
   padding: 5px 0 20px 0;
   color: var(--primary-text-color-1);

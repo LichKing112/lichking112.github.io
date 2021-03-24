@@ -133,6 +133,10 @@ body {
                 color: var(--primary-text-color-1);
                 @include subtitle(16px, 24px);
             }
+            @media only screen and (max-width: 600px) {
+                padding: 18x;
+                margin-top: 35px;
+            }
         }
     }
 }
