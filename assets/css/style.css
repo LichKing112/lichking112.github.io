@@ -103,6 +103,10 @@ body {
 }
 
 .content-wrapper .section-skills .card {
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+  -webkit-animation: fadeEffect 2s;
+          animation: fadeEffect 2s;
   padding: 24px;
   margin-top: 40px;
   background-color: var(--primary-background-color-2);
@@ -174,6 +178,10 @@ body {
 }
 
 .navbar-fixed {
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+  -webkit-animation: fadeEffect 2s;
+          animation: fadeEffect 2s;
   -webkit-animation: navbarEffect 0.6s ease-in-out;
           animation: navbarEffect 0.6s ease-in-out;
   -webkit-transition: 0.6;

@@ -49,6 +49,11 @@ body {
 	line-height: $line-height;
 }
 
+@mixin fade($property) {
+	transition: $property 2s;
+	animation: fadeEffect 2s;
+}
+
 .content-wrapper {
 	font-family: $manrope-font;
 
@@ -120,8 +125,11 @@ body {
 			fill: var(--primary-text-color-1);
 		}
 		.card {
+			@include fade(background-color);
+
 			padding: 24px;
 			margin-top: 40px;
+			
 			background-color: var(--primary-background-color-2);
 
 			box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
@@ -184,6 +192,8 @@ body {
 }
 
 .navbar-fixed {
+	@include fade(background-color);
+	
 	animation: navbarEffect 0.6s ease-in-out;
 	transition: 0.6;
 
