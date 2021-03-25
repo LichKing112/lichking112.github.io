@@ -11,266 +11,266 @@ $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
 
 :root {
-    --primary-background-color-1: #{$faux-snow};
-    --primary-background-color-2: #{$faux-guyabano};
-    --primary-text-color-1: #{$faux-dark-gunmetal-1};
-    --primary-text-color-2: #{$faux-granite-gray};
-    --secondary-text-color-1: #{$faux-ruber};
-    --primary-btn-color-1: #{$faux-floral-white};
-    --primary-btn-hover-color-1: #{lighten($faux-floral-white, 15)};
+	--primary-background-color-1: #{$faux-snow};
+	--primary-background-color-2: #{$faux-guyabano};
+	--primary-text-color-1: #{$faux-dark-gunmetal-1};
+	--primary-text-color-2: #{$faux-granite-gray};
+	--secondary-text-color-1: #{$faux-ruber};
+	--primary-btn-color-1: #{$faux-floral-white};
+	--primary-btn-hover-color-1: #{lighten($faux-floral-white, 15)};
 }
 
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: background 2s;
-    animation: fadeEffect 2s;
-    background: var(--primary-background-color-1);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: background 2s;
+	animation: fadeEffect 2s;
+	background: var(--primary-background-color-1);
 }
 
 .theme-dark {
-    --primary-background-color-1: #{$faux-dark-gunmetal-2};
-    --primary-background-color-2: #{darken($faux-guyabano, 95)};
-    --primary-text-color-1: #{lighten($faux-dark-gunmetal-1, 75)};
-    --primary-text-color-2: #{lighten($faux-granite-gray, 45)};
-    --secondary-text-color-1: #{darken($faux-ruber, 5)};
-    --primary-btn-color-1: #{darken($faux-floral-white, 97)};
-    --primary-btn-hover-color-1: #{darken($faux-floral-white, 85)};
+	--primary-background-color-1: #{$faux-dark-gunmetal-2};
+	--primary-background-color-2: #{darken($faux-guyabano, 95)};
+	--primary-text-color-1: #{lighten($faux-dark-gunmetal-1, 75)};
+	--primary-text-color-2: #{lighten($faux-granite-gray, 45)};
+	--secondary-text-color-1: #{darken($faux-ruber, 5)};
+	--primary-btn-color-1: #{darken($faux-floral-white, 97)};
+	--primary-btn-hover-color-1: #{darken($faux-floral-white, 85)};
 }
 
 @mixin subtitle($font-size, $line-height) {
-    font-size: $font-size;
-    line-height: $line-height;
+	font-size: $font-size;
+	line-height: $line-height;
 }
 
 .content-wrapper {
-    font-family: $manrope-font;
+	font-family: $manrope-font;
 
-    .section-hero {
-        .hero-head {
-            .navbar {
-                padding: 20px;
-                .navbar-brand {
-                    .navbar-item {
-                        color: var(--primary-text-color-1);
+	.section-hero {
+		.hero-head {
+			.navbar {
+				padding: 20px;
+				.navbar-brand {
+					.navbar-item {
+						color: var(--primary-text-color-1);
 
-                        font-size: 34px;
-                        font-weight: 800;
-                        line-height: 24px;
-                    }
-                    .navbar-burger {
-                        color: $faux-brink-pink;
-                    }
-                }
-                .navbar-menu {
-                    .navbar-item {
-                        color: var(--primary-text-color-1);
-                        transition: 0.3s;
-                        font-size: 18px;
+						font-size: 34px;
+						font-weight: 800;
+						line-height: 24px;
+					}
+					.navbar-burger {
+						color: $faux-brink-pink;
+					}
+				}
+				.navbar-menu {
+					.navbar-item {
+						color: var(--primary-text-color-1);
+						transition: 0.3s;
+						font-size: 18px;
 
-                        font-weight: 600;
-                        line-height: 34px;
+						font-weight: 600;
+						line-height: 34px;
 
-                        &:hover {
-                            transform: translate(0, -6px);
+						&:hover {
+							transform: translate(0, -6px);
 
-                            color: var(--secondary-text-color-1);
-                        }
-                    }
-                }
-                .is-active {
-                    transition: 0.3s;
+							color: var(--secondary-text-color-1);
+						}
+					}
+				}
+				.is-active {
+					transition: 0.3s;
 
-                    background: var(--primary-background-color-2);
-                }
-            }
-        }
-        .hero-body {
-            .header {
-                padding: 10px;
+					background: var(--primary-background-color-2);
+				}
+			}
+		}
+		.hero-body {
+			.header {
+				padding: 10px;
 
-                img {
-                    transition: 0.3s;
+				img {
+					transition: 0.3s;
 
-                    box-shadow: 0 3.5px 2.7px rgba(0, 0, 0, 0.016),
-                        0 7.5px 6.9px rgba(0, 0, 0, 0.022),
-                        0 13.1px 14.2px rgba(0, 0, 0, 0.028),
-                        0 23.3px 29.2px rgba(0, 0, 0, 0.034),
-                        0 56px 80px rgba(0, 0, 0, 0.05);
+					box-shadow: 0 3.5px 2.7px rgba(0, 0, 0, 0.016),
+						0 7.5px 6.9px rgba(0, 0, 0, 0.022),
+						0 13.1px 14.2px rgba(0, 0, 0, 0.028),
+						0 23.3px 29.2px rgba(0, 0, 0, 0.034),
+						0 56px 80px rgba(0, 0, 0, 0.05);
 
-                    &:hover {
-                        transform: translate(0, -3px);
-                    }
-                }
-                @media only screen and (max-width: 600px) {
-                    padding: 5px;
-                }
-            }
-        }
-    }
-    .section-skills {
-        svg,
-        path {
-            fill: var(--primary-text-color-1);
-        }
-        .card {
-            padding: 24px;
-            margin-top: 40px;
-            background-color: var(--primary-background-color-2);
+					&:hover {
+						transform: translate(0, -3px);
+					}
+				}
+				@media only screen and (max-width: 600px) {
+					padding: 5px;
+				}
+			}
+		}
+	}
+	.section-skills {
+		svg,
+		path {
+			fill: var(--primary-text-color-1);
+		}
+		.card {
+			padding: 24px;
+			margin-top: 40px;
+			background-color: var(--primary-background-color-2);
 
-            box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
-                0 5.2px 10px rgba(0, 0, 0, 0.025),
-                0 10.3px 24.1px rgba(0, 0, 0, 0.033),
-                0 29px 80px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
+				0 5.2px 10px rgba(0, 0, 0, 0.025),
+				0 10.3px 24.1px rgba(0, 0, 0, 0.033),
+				0 29px 80px rgba(0, 0, 0, 0.05);
 
-            .title {
-                color: var(--secondary-text-color-1);
-                font-size: 22px;
-                font-weight: 600;
-                line-height: 55px;
-            }
-            .subtitle,
-            strong {
-                color: var(--primary-text-color-1);
-                @include subtitle(16px, 24px);
-            }
-            @media only screen and (max-width: 600px) {
-                padding: 18x;
-                margin-top: 35px;
-            }
-        }
-    }
+			.title {
+				color: var(--secondary-text-color-1);
+				font-size: 22px;
+				font-weight: 600;
+				line-height: 55px;
+			}
+			.subtitle,
+			strong {
+				color: var(--primary-text-color-1);
+				@include subtitle(16px, 24px);
+			}
+			@media only screen and (max-width: 600px) {
+				padding: 18x;
+				margin-top: 35px;
+			}
+		}
+	}
 }
 
 .title {
-    padding: 5px 0 20px 0;
+	padding: 5px 0 20px 0;
 
-    color: var(--primary-text-color-1);
-    font-size: 44px;
-    font-weight: 750;
-    line-height: 55px;
+	color: var(--primary-text-color-1);
+	font-size: 44px;
+	font-weight: 750;
+	line-height: 55px;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 34px;
-    }
+	@media only screen and (max-width: 600px) {
+		font-size: 34px;
+	}
 }
 .subtitle-is-top {
-    @include subtitle(16px, 24px);
+	@include subtitle(16px, 24px);
 
-    color: var(--secondary-text-color-1);
-    text-transform: uppercase;
-    font-weight: 800;
-    line-height: 40px;
+	color: var(--secondary-text-color-1);
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 40px;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
+	@media only screen and (max-width: 600px) {
+		font-size: 12px;
+	}
 }
 .subtitle-is-buttom {
-    @include subtitle(16px, 24px);
+	@include subtitle(16px, 24px);
 
-    color: var(--primary-text-color-2);
-    font-weight: 400;
+	color: var(--primary-text-color-2);
+	font-weight: 400;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
-    }
+	@media only screen and (max-width: 600px) {
+		font-size: 14px;
+	}
 }
 
 .navbar-fixed {
-    animation: navbarEffect 0.6s ease-in-out;
-    transition: 0.6;
+	animation: navbarEffect 0.6s ease-in-out;
+	transition: 0.6;
 
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
 
-    background-color: var(--primary-background-color-2) !important;
+	background-color: var(--primary-background-color-2) !important;
 }
 
 .btn {
-    display: inline-block;
-    background: transparent;
-    font: inherit;
-    border: 0;
-    outline: 0;
-    padding: 0;
-    transition: all 200ms ease-in;
-    cursor: pointer;
+	display: inline-block;
+	background: transparent;
+	font: inherit;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	transition: all 200ms ease-in;
+	cursor: pointer;
 
-    &--floral-white {
-        transition: 0.3s;
+	&--floral-white {
+		transition: 0.3s;
 
-        background: var(--primary-btn-color-1);
+		background: var(--primary-btn-color-1);
 
-        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 2px;
-        padding: 10px 24px;
-        margin-bottom: 22px;
+		box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+		border-radius: 2px;
+		padding: 10px 24px;
+		margin-bottom: 22px;
 
-        color: var(--primary-text-color-1);
-        font-weight: 750;
+		color: var(--primary-text-color-1);
+		font-weight: 750;
 
-        &:hover {
-            transform: translate(0, -6px);
-            color: var(--primary-text-color-2);
+		&:hover {
+			transform: translate(0, -6px);
+			color: var(--primary-text-color-2);
 
-            background: var(--primary-btn-hover-color-1);
-        }
-    }
+			background: var(--primary-btn-hover-color-1);
+		}
+	}
 }
 
 .toggle {
-    cursor: pointer;
-    font-size: 150%;
+	cursor: pointer;
+	font-size: 150%;
 
-    &:before {
-        content: "🌒 Darken the world!";
-    }
-    &.active:before {
-        content: "☀️ Let there be light!";
-    }
-    &.animate {
-        animation: animate 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+	&:before {
+		content: "🌒 Darken the world!";
+	}
+	&.active:before {
+		content: "☀️ Let there be light!";
+	}
+	&.animate {
+		animation: animate 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
 }
 
 @keyframes animate {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes navbarEffect {
-    from {
-        top: -10px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
-        opacity: 1;
-    }
+	from {
+		top: -10px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
 }
