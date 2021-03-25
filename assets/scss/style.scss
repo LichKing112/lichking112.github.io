@@ -2,6 +2,7 @@ $manrope-font: "Manrope", sans-serif;
 
 $faux-floral-white: #fdf7f4;
 $faux-snow: #fef5f8;
+$faux-guyabano: #fcf7f5;
 $faux-dark-gunmetal-1: #1a202c;
 $faux-dark-gunmetal-2: #191c2f;
 $faux-granite-gray: #666666;
@@ -10,7 +11,8 @@ $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
 
 :root {
-    --primary-background-color: #{$faux-snow};
+    --primary-background-color-1: #{$faux-snow};
+    --primary-background-color-2: #{$faux-guyabano};
     --primary-text-color-1: #{$faux-dark-gunmetal-1};
     --primary-text-color-2: #{$faux-granite-gray};
     --secondary-text-color-1: #{$faux-ruber};
@@ -29,11 +31,12 @@ body {
     border: 0;
     transition: background 2s;
     animation: fadeEffect 2s;
-    background: var(--primary-background-color);
+    background: var(--primary-background-color-1);
 }
 
 .theme-dark {
-    --primary-background-color: #{$faux-dark-gunmetal-2};
+    --primary-background-color-1: #{$faux-dark-gunmetal-2};
+    --primary-background-color-2: #{darken($faux-guyabano, 95)};
     --primary-text-color-1: #{lighten($faux-dark-gunmetal-1, 75)};
     --primary-text-color-2: #{lighten($faux-granite-gray, 45)};
     --secondary-text-color-1: #{darken($faux-ruber, 5)};
@@ -84,7 +87,7 @@ body {
                 .is-active {
                     transition: 0.3s;
 
-                    background: var(--primary-background-color);
+                    background: var(--primary-background-color-1);
                 }
             }
         }
@@ -119,7 +122,7 @@ body {
         .card {
             padding: 24px;
             margin-top: 40px;
-            background-color: var(--primary-btn-color-1);
+            background-color: var(--primary-background-color-2);
 
             box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
                 0 5.2px 10px rgba(0, 0, 0, 0.025),
