@@ -37,3 +37,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         });
     });
 });
+
+const navbar = document.querySelector('.navbar');
+window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('is-fixed-top');
+        navbar.classList.add('navbar-fixed');
+    } else {
+        navbar.classList.remove('is-fixed-top');
+        navbar.classList.remove('navbar-fixed');
+    }
+};
