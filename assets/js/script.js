@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const navbar = document.querySelector('.navbar');
 window.onscroll = () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) {
         navbar.classList.add('is-fixed-top');
         navbar.classList.add('navbar-fixed');
     } else {
