@@ -7,6 +7,8 @@
   --secondary-text-color-1: #d04c73;
   --primary-btn-color-1: #fdf7f4;
   --primary-btn-hover-color-1: white;
+  --primary-anchor-link-1: #8739f9;
+  --primary-anchor-hover-1: #37b9f1;
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +35,8 @@ body {
   --secondary-text-color-1: #cb3863;
   --primary-btn-color-1: #020100;
   --primary-btn-hover-color-1: #36180a;
+  --primary-anchor-link-1: #d2b5fd;
+  --primary-anchor-hover-1: #0b719d;
 }
 
 .content-wrapper {
@@ -166,6 +170,30 @@ body {
 .content-wrapper .section-projects .big-or-commissions-projects article .subtitle {
   padding: 45px;
   color: var(--primary-text-color-2);
+}
+
+.content-wrapper .section-contacts .icon-text {
+  padding: 24px;
+  padding-top: 45px;
+}
+
+.content-wrapper .section-contacts .icon-text .icon svg,
+.content-wrapper .section-contacts .icon-text .icon path {
+  fill: var(--primary-text-color-1);
+}
+
+.content-wrapper .section-contacts .icon-text .icon-content {
+  padding: 2px;
+}
+
+a {
+  color: var(--primary-anchor-link-1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--primary-anchor-hover-1);
 }
 
 .title {

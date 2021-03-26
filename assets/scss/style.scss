@@ -10,6 +10,8 @@ $faux-granite-gray: #666666;
 
 $faux-ruber: #d04c73;
 $faux-brink-pink: #f15f79;
+$faux-blue-violet: #8739f9;
+$faux-picton-blue: #37b9f1;
 
 :root {
 	--primary-background-color-1: #{$faux-snow};
@@ -19,6 +21,8 @@ $faux-brink-pink: #f15f79;
 	--secondary-text-color-1: #{$faux-ruber};
 	--primary-btn-color-1: #{$faux-floral-white};
 	--primary-btn-hover-color-1: #{lighten($faux-floral-white, 15)};
+	--primary-anchor-link-1: #{$faux-blue-violet};
+	--primary-anchor-hover-1: #{$faux-picton-blue};
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +47,8 @@ body {
 	--secondary-text-color-1: #{darken($faux-ruber, 5)};
 	--primary-btn-color-1: #{darken($faux-floral-white, 97)};
 	--primary-btn-hover-color-1: #{darken($faux-floral-white, 85)};
+	--primary-anchor-link-1: #{lighten($faux-blue-violet, 25)};
+	--primary-anchor-hover-1: #{darken($faux-picton-blue, 25)};
 }
 
 @mixin subtitle($font-size, $line-height) {
@@ -185,6 +191,31 @@ body {
 				}
 			}
 		}
+	}
+	.section-contacts {
+		.icon-text {
+			padding: 24px;
+			padding-top: 45px;
+
+			.icon {
+				svg,
+				path {
+					fill: var(--primary-text-color-1);
+				}
+			}
+			.icon-content {
+				padding: 2px;
+			}
+		}
+	}
+}
+
+a {
+	color: var(--primary-anchor-link-1);
+	transition: 0.3s;
+
+	&:hover {
+		color: var(--primary-anchor-hover-1);
 	}
 }
 
