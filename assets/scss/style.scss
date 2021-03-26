@@ -67,14 +67,14 @@ body {
 	.section-hero {
 		.hero-head {
 			.navbar {
-				padding: 20px;
+				padding: 1.25rem;
 				.navbar-brand {
 					.navbar-item {
 						color: var(--primary-text-color-1);
 
-						font-size: 34px;
+						font-size: 2.125rem;
 						font-weight: 800;
-						line-height: 24px;
+						line-height: 1.5rem;
 					}
 					.navbar-burger {
 						color: $faux-brink-pink;
@@ -84,13 +84,13 @@ body {
 					.navbar-item {
 						color: var(--primary-text-color-1);
 						transition: 0.3s;
-						font-size: 18px;
+						font-size: 1.125rem;
 
 						font-weight: 600;
-						line-height: 34px;
+						line-height: 2.125rem;
 
 						&:hover {
-							transform: translate(0, -6px);
+							transform: translate(0, -0.375rem);
 
 							color: var(--secondary-text-color-1);
 						}
@@ -105,23 +105,23 @@ body {
 		}
 		.hero-body {
 			.header {
-				padding: 10px;
+				padding: 0.625rem;
 
 				img {
 					transition: 0.3s;
 
-					box-shadow: 0 3.5px 2.7px rgba(0, 0, 0, 0.016),
-						0 7.5px 6.9px rgba(0, 0, 0, 0.022),
-						0 13.1px 14.2px rgba(0, 0, 0, 0.028),
-						0 23.3px 29.2px rgba(0, 0, 0, 0.034),
-						0 56px 80px rgba(0, 0, 0, 0.05);
+					box-shadow: 0 0.219rem 0.169rem rgba(0, 0, 0, 0.016),
+						0 0.469rem 0.431rem rgba(0, 0, 0, 0.022),
+						0 0.819rem 0.888rem rgba(0, 0, 0, 0.028),
+						0 1.456rem 1.825rem rgba(0, 0, 0, 0.034),
+						0 3.5rem 5rem rgba(0, 0, 0, 0.05);
 
 					&:hover {
-						transform: translate(0, -3px);
+						transform: translate(0, -0.188rem);
 					}
 				}
-				@media only screen and (max-width: 600px) {
-					padding: 5px;
+				@media only screen and (max-width: 37.5rem) {
+					padding: 0.313rem;
 				}
 			}
 		}
@@ -134,59 +134,59 @@ body {
 		.card {
 			@include fade(background-color);
 
-			padding: 24px;
-			margin-top: 40px;
+			padding: 1.5rem;
+			margin-top: 2.5rem;
 
 			background-color: var(--primary-background-color-2);
 
-			box-shadow: 0 2.3px 3.6px rgba(0, 0, 0, 0.017),
-				0 5.2px 10px rgba(0, 0, 0, 0.025),
-				0 10.3px 24.1px rgba(0, 0, 0, 0.033),
-				0 29px 80px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 0.144rem 0.225rem rgba(0, 0, 0, 0.017),
+				0 0.325rem 0.625rem rgba(0, 0, 0, 0.025),
+				0 0.644rem 1.506rem rgba(0, 0, 0, 0.033),
+				0 1.813rem 5rem rgba(0, 0, 0, 0.05);
 
 			.title {
 				color: var(--secondary-text-color-1);
-				font-size: 22px;
+				font-size: 1.375rem;
 				font-weight: 600;
-				line-height: 55px;
+				line-height: 3.438rem;
 			}
 			.subtitle,
 			strong {
 				color: var(--primary-text-color-1);
-				@include subtitle(16px, 24px);
+				@include subtitle(1rem, 1.5rem);
 			}
-			@media only screen and (max-width: 600px) {
-				padding: 18x;
-				margin-top: 35px;
+			@media only screen and (max-width: 37.5rem) {
+				padding: 1.125rem;
+				margin-top: 2.188rem;
 			}
 		}
 	}
 	.section-projects {
 		.open-source-projects {
-			padding-top: 120px;
+			padding-top: 7.5rem;
 
 			.title {
-				font-size: 34px;
+				font-size: 2.125rem;
 
-				@media only screen and (max-width: 600px) {
-					font-size: 24px;
+				@media only screen and (max-width: 37.5rem) {
+					font-size: 1.5rem;
 				}
 			}
 		}
 		.big-or-commissions-projects {
-			padding-top: 120px;
+			padding-top: 7.5rem;
 
 			.title {
-				font-size: 34px;
+				font-size: 2.125rem;
 
-				@media only screen and (max-width: 600px) {
-					font-size: 24px;
+				@media only screen and (max-width: 37.5rem) {
+					font-size: 1.5rem;
 				}
 			}
 
 			article {
 				.subtitle {
-					padding: 45px;
+					padding: 2.813rem;
 					color: var(--primary-text-color-2);
 				}
 			}
@@ -194,8 +194,8 @@ body {
 	}
 	.section-contacts {
 		.icon-text {
-			padding: 24px;
-			padding-top: 45px;
+			padding: 1.5rem;
+			padding-top: 2.813rem;
 
 			.icon {
 				svg,
@@ -204,7 +204,7 @@ body {
 				}
 			}
 			.icon-content {
-				padding: 2px;
+				padding: 0.125rem;
 			}
 		}
 	}
@@ -220,37 +220,37 @@ a {
 }
 
 .title {
-	padding: 5px 0 20px 0;
+	padding: 0.313rem 0 1.25rem 0;
 
 	color: var(--primary-text-color-1);
-	font-size: 44px;
+	font-size: 2.75rem;
 	font-weight: 750;
-	line-height: 55px;
+	line-height: 3.438rem;
 
-	@media only screen and (max-width: 600px) {
-		font-size: 34px;
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 2.125rem;
 	}
 }
 .subtitle-is-top {
-	@include subtitle(16px, 24px);
+	@include subtitle(1rem, 1.5rem);
 
 	color: var(--secondary-text-color-1);
 	text-transform: uppercase;
 	font-weight: 800;
-	line-height: 40px;
+	line-height: 2.5rem;
 
-	@media only screen and (max-width: 600px) {
-		font-size: 12px;
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 0.75rem;
 	}
 }
 .subtitle-is-buttom {
-	@include subtitle(16px, 24px);
+	@include subtitle(1rem, 1.5rem);
 
 	color: var(--primary-text-color-2);
 	font-weight: 400;
 
-	@media only screen and (max-width: 600px) {
-		font-size: 14px;
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 0.875rem;
 	}
 }
 
@@ -260,16 +260,16 @@ a {
 	animation: navbarEffect 0.6s ease-in-out;
 	transition: 0.6;
 
-	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-		0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 0.175rem 0.138rem rgba(0, 0, 0, 0.02),
+		0 0.419rem 0.331 rgba(0, 0, 0, 0.028), 0 0.781rem 0.625rem rgba(0, 0, 0, 0.035),
+		0 1.394rem 1.119rem rgba(0, 0, 0, 0.042),
+		0 2.613rem 2.088rem rgba(0, 0, 0, 0.05), 0 6.25rem 5rem rgba(0, 0, 0, 0.07);
 
 	background-color: var(--primary-background-color-2) !important;
 }
 
 .gw-repo-outer {
-	padding: 22px;
+	padding: 1.375rem;
 	float: left;
 
 	.gw-repo {
@@ -282,7 +282,7 @@ a {
 		.gw-repo {
 			padding: 0.5em 0;
 			margin: 0 1.5em 1em 0;
-			border-top: 1px solid #ccc;
+			border-top: 0.063rem solid #ccc;
 		}
 		.gw-repo:nth-child(2n) {
 			margin: 0 0 1em 1.5em;
@@ -304,19 +304,18 @@ a {
 		.gw-watchers,
 		.gw-forks {
 			display: inline-block;
-			height: 21px;
-			padding: 0 5px 0 23px;
-			line-height: 21px;
+			height: 1.313rem;
+			padding: 0 0.313rem 0 1.438rem;
+			line-height: 1.313rem;
 			color: var(--primary-text-color-1);
-			// background: transparent url("/assets/images/repostat.svg") no-repeat 0 0;
 		}
 		.gw-watchers {
 			color: var(--primary-text-color-2);
-			background-position: 5px -2px;
+			background-position: 0.313rem -0.125rem;
 		}
 		.gw-forks {
 			color: var(--primary-text-color-2);
-			background-position: 5px -52px;
+			background-position: 0.313rem -3.25rem;
 		}
 		.gw-lang {
 			font-family: $firacode-font;
@@ -328,10 +327,10 @@ a {
 		}
 	}
 	&:hover {
-		box-shadow: 0 7px 10.9px rgba(0, 0, 0, 0.038),
-			0 16.5px 30.2px rgba(0, 0, 0, 0.053),
-			0 34.2px 72.7px rgba(0, 0, 0, 0.069),
-			0 100px 241px rgba(0, 0, 0, 0.12);
+		box-shadow: 0 0.438rem 0.681rem rgba(0, 0, 0, 0.038),
+			0 1.031rem 1.888rem rgba(0, 0, 0, 0.053),
+			0 2.138rem 4.544rem rgba(0, 0, 0, 0.069),
+			0 6.25rem 15.063rem rgba(0, 0, 0, 0.12);
 	}
 }
 
@@ -354,16 +353,16 @@ a {
 
 		background: var(--primary-btn-color-1);
 
-		box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-		border-radius: 2px;
-		padding: 10px 24px;
-		margin-bottom: 22px;
+		box-shadow: 0 0 0.625rem 0.125rem rgba(0, 0, 0, 0.1);
+		border-radius: 0.125rem;
+		padding: 0.625rem 1.5rem;
+		margin-bottom: 1.375rem;
 
 		color: var(--primary-text-color-1);
 		font-weight: 750;
 
 		&:hover {
-			transform: translate(0, -6px);
+			transform: translate(0, -0.375rem);
 			color: var(--primary-text-color-2);
 
 			background: var(--primary-btn-hover-color-1);
