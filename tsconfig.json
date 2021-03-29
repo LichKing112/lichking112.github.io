@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "outDir": "./assets/js",
+        "rootDir": "./assets/ts",
+        "lib": [
+            "ES6",
+            "DOM"
+        ]
+    }
+}
